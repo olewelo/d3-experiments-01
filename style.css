@@ -1,0 +1,131 @@
+/*header style*/
+header {
+    text-align: center; 
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5pt;
+ }
+
+ body {
+    background-color: rgb(13, 71, 90);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+ footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: auto;
+    box-sizing: border-box;
+    margin: auto auto;
+    max-width: 40%;
+}
+
+img.block {
+   display: block;
+   border: solid #333 1p;
+   margin: 0 auto;
+}
+
+ /*main content*/
+ * {
+    box-sizing: border-box;
+}
+
+ .row {
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 60%;
+ }
+
+ .intro-text-box {
+    line-height: 1.6;
+    color:#e0e016;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+ }
+ .intro-text-box h1 {
+    font-size: 50pt;
+    padding-bottom: 40px
+ }
+ .intro-text-box p1 {
+    font-size: 16pt;
+    padding-bottom: 30px;
+    display: block;
+    clear: both;
+ }
+ .intro-text-box p2 {
+    font-size: 16pt;
+    padding-bottom: 30px;
+    display: block;
+    clear: both;
+ }
+ .intro-text-box p3 {
+    font-size: 16pt;
+    padding-bottom: 30px;
+    display: block;
+    clear: both;
+ }
+
+ .visualizations svg {
+   padding-top: 40px; 
+   background-color: rgba(128, 128, 128, 0.0);
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+ }
+
+  /*links body*/
+ #body a:any-link {
+    color:#e0e016;
+    text-decoration:none;
+    background-color: rgb(139, 47, 186);
+    padding: 1px 6px;
+  }
+
+ #body a:hover {
+    text-decoration: underline;
+  }
+
+  /*links footer*/
+ #footer a:any-link {
+    color:beige;
+    text-decoration:none;
+    background-color:black;
+    padding: 1px 6px;
+  }
+
+  #footer a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Keeping links from wrapping at the wrong place */
+  .single-line {
+    white-space: nowrap;
+  }
+
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .row {
+        max-width: 90%;
+    }
+    .intro-text-box h1 {
+        font-size: 36pt; /* Adjust the font size for smaller screens */
+    }
+
+    .intro-text-box p1,
+    .intro-text-box p2,
+    .intro-text-box p3 {
+        font-size: 14pt; /* Adjust the font size for smaller screens */
+    }
+
+    footer {
+        max-width: 70%;
+        padding-top: 20pt;
+        padding-bottom: 20pt;
+    }
+}
